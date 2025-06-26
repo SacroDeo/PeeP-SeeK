@@ -7,7 +7,8 @@ It integrates powerful modules like [Sherlock](https://github.com/sherlock-proje
 ---
 
 ## 📂 Project Structure
-![image](https://github.com/user-attachments/assets/a6927d60-6d04-44f8-a66c-ae4062732e61)
+![image](https://github.com/user-attachments/assets/177345be-5598-4e7f-9224-e936087ded80)
+
 
 
 ---
