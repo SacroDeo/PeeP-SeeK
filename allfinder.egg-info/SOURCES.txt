@@ -1,0 +1,10 @@
+README.md
+setup.py
+allfinder.egg-info/PKG-INFO
+allfinder.egg-info/SOURCES.txt
+allfinder.egg-info/dependency_links.txt
+allfinder.egg-info/requires.txt
+allfinder.egg-info/top_level.txt
+tests/test_email.py
+tests/test_phone.py
+tests/test_username.py

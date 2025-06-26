@@ -1,0 +1,10 @@
+Metadata-Version: 2.4
+Name: allfinder
+Version: 0.1
+Requires-Dist: requests
+Requires-Dist: holehe
+Requires-Dist: sherlock
+Requires-Dist: beautifulsoup4
+Requires-Dist: pandas
+Requires-Dist: python-whois
+Dynamic: requires-dist

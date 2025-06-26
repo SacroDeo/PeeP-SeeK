@@ -1,0 +1,6 @@
+requests
+holehe
+sherlock
+beautifulsoup4
+pandas
+python-whois

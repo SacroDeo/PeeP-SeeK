@@ -1,0 +1,268 @@
+/* Gradient Background */
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  font-family: 'Segoe UI', 'Montserrat', Arial, sans-serif;
+  color: white;
+  overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 32px 0 0 0;
+  width: 100vw;
+  background: transparent;
+  gap: 40px;
+}
+
+.logo {
+  font-size: 30px;        /* Enlarged size */
+  font-weight: bold;      /* Make it stand out */
+  padding: 10px 20px;     /* Add spacing */
+  color: #ffffff;         /* Optional: color for better visibility */
+  position: absolute;     /* Top-left corner positioning */
+  top: 0;
+  left: 0;
+}
+
+
+.nav-tabs {
+  display: flex;
+  gap: 28px;
+}
+
+.nav-tab {
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #fff;
+  opacity: 0.85;
+  padding-bottom: 6px;
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+  transition: border 0.2s, color 0.2s;
+  user-select: none;
+}
+
+.nav-tab.active {
+  color: #ffd8a6;
+  border-bottom: 3px solid #ff975a;
+  opacity: 1;
+}
+
+.nav-tab.disabled {
+  pointer-events: none;
+  opacity: 0.4;
+}
+
+/* Main Content */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.headline {
+  font-size: 2.7rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: 0 0 18px 0;
+  color: #fff;
+  text-align: center;
+}
+
+.subheadline {
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-bottom: 28px;
+  text-align: center;
+  color: #fff;
+}
+
+.subheadline .free {
+  color: #ffd8a6;
+  font-weight: 600;
+  text-decoration: underline;
+  margin-left: 6px;
+}
+
+/* Lookup Card */
+.lookup-card {
+  background: rgba(255,255,255,0.09);
+  border-radius: 18px;
+  box-shadow: 0 6px 40px 0 rgba(20,8,65,0.16);
+  padding: 34px 32px 34px 32px;
+  width: 620px;
+  max-width: 95vw;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lookup-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin-bottom: 24px;
+}
+
+.lookup-tab {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #fff;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 7px 22px;
+  border-radius: 8px 8px 0 0;
+  cursor: pointer;
+  border-bottom: 4px solid transparent;
+  transition: border 0.2s;
+}
+
+.lookup-tab.active {
+  color: #ff975a;
+  background: #fff;
+  border-bottom: 4px solid #ff975a;
+}
+
+.lookup-tab.disabled {
+  color: #fff;
+  opacity: 0.37;
+  pointer-events: none;
+}
+
+.lookup-form {
+  display: flex;
+  gap: 0;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.lookup-input {
+  flex: 1;
+  padding: 16px 20px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px 0 0 8px;
+  outline: none;
+  background: #fff;
+  color: #333;
+}
+
+.lookup-btn {
+  padding: 0 36px;
+  font-size: 1.1rem;
+  background-color: #ff975a;
+  border: none;
+  color: #fff;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.lookup-btn:hover {
+  background-color: #ff851a;
+}
+
+/* Results Section */
+.results {
+  margin-top: 32px;
+  width: 620px;
+  max-width: 97vw;
+}
+
+.result-box {
+  background: #fff;
+  border-radius: 15px;
+  padding: 22px 24px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 14px rgba(20,8,65,0.07);
+  color: #242424;
+  text-align: left;
+}
+
+.result-box h2 {
+  margin-top: 0;
+  color: #6a11cb;
+}
+
+.row {
+  padding: 7px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 1rem;
+}
+
+.row:last-child {
+  border-bottom: none;
+}
+
+/* ...other styles... */
+
+/* ...other styles... */
+
+.loading-bar-container {
+  width: 320px;
+  margin: 26px auto;
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 1.5px 7px rgba(20,8,65,0.10);
+  height: 24px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  border: 1.5px solid #e0e0e0;
+}
+
+.loading-bar {
+  height: 100%;
+  width: 0%;
+  /* Contrasting, vibrant orange-to-yellow gradient */
+  background: linear-gradient(90deg, #ff851a 0%, #ffd700 100%);
+  border-radius: 7px 0 0 7px;
+  transition: width 0.4s cubic-bezier(.4,1.3,.3,1);
+  /* Optional: add drop-shadow for more pop */
+  box-shadow: 0 2px 8px rgba(255,133,26,0.25);
+}
+
+.loading-bar-label {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  left: 0;
+  top: 0;
+  font-size: 1rem;
+  color: #333;
+  font-weight: 600;
+  z-index: 2;
+  user-select: none;
+  line-height: 24px;
+  pointer-events: none;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+  .lookup-card, .results {
+    width: 99vw;
+    padding: 16px;
+  }
+  .main-content {
+    margin-top: 30px;
+  }
+}
