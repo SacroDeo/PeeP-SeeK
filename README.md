@@ -7,25 +7,7 @@ It integrates powerful modules like [Sherlock](https://github.com/sherlock-proje
 ---
 
 ## 📂 Project Structure
-
-PeeP-SeeK/
-├── allfinder/ # Core search modules
-│ ├── username_lookup.py # Username search using Sherlock
-│ ├── email_lookup.py
-│ ├── phone_lookup.py
-│ 
-├── sherlock/ # Sherlock fork (runs via Poetry)
-├── tests/ # Module tests
-│ ├── test_username.py
-│ └── ...
-├── templates/
-│ └── index.html # Web interface
-├── static/
-│ └── style.css # Styling for the web UI
-├── app.py # Flask application
-├── requirements.txt
-├── setup.py
-└── README.md
+![image](https://github.com/user-attachments/assets/a6927d60-6d04-44f8-a66c-ae4062732e61)
 
 
 ---
